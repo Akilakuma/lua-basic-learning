@@ -13,3 +13,18 @@ end
 
 -- result
 -- 其他狀況
+
+
+
+
+-- 不等於的寫法稍微有點不一樣
+
+
+if index ~= 2 then
+    print("不等於2")
+else
+    print("等於2")
+end
+
+-- result
+-- 等於2
