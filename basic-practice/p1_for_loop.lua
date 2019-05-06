@@ -5,6 +5,8 @@ for i=1,5,1 do
 end
 
 print("從1開始,目標是到10，每次加2")
+
+-- 用逗點區隔條件，後面放do
 for i=1,10,2 do
     print(i)
 end
