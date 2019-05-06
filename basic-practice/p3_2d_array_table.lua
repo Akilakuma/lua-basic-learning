@@ -34,7 +34,7 @@ end
 local result = {}
 
 for i=1,5,1 do
-    -- 第一層的內容先宣告空的物件
+    -- 第一層的內容先宣告空的
     result[i] = {}
 
     result[i][1] = 1
@@ -44,3 +44,16 @@ end
 
 PrintTable(result)
 
+-- 對lua來說，型態是number或者string是不同的，特別要注意
+-- 若table的key是number型態，for的時候會照順序出現，但若key的型態是string，則for的時候會亂序
+local result_for_string_index = {}
+for i=1,5,1 do
+    -- 第一層的內容先宣告空的物件
+    result_for_string_index[i] = {}
+
+    result_for_string_index[i]["1"] = 1
+    result_for_string_index[i]["2"] = 20
+    result_for_string_index[i]["3"] = 300
+end
+
+PrintTable(result_for_string_index)
