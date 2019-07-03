@@ -50,3 +50,20 @@ end
 -- for i=1,i < 10,2 do
 --     print(i)
 -- end
+
+
+-- inpairs 用interation的方式印出
+local animal = {}
+animal["cat"] = 100
+animal["dog"] = 20
+animal["bird"] = 50
+
+for k, v in pairs(animal) do
+    print(k, v)
+end
+
+
+-- result
+-- bird	50
+-- cat	100
+-- dog	20
